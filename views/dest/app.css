@@ -1,0 +1,142 @@
+.margin-left-15 {
+  margin-left: 15px; }
+
+.margin-left-25 {
+  margin-left: 25px; }
+
+.margin-right-5 {
+  margin-right: 5px; }
+
+.margin-right-15 {
+  margin-right: 15px; }
+
+.margin-top-7 {
+  margin-top: 7px; }
+
+.margin-bottom-10 {
+  margin-bottom: 10px; }
+
+.text-warning {
+  color: #ffcc51; }
+
+.pointer {
+  cursor: pointer; }
+
+.p-panel-header {
+  margin-bottom: 15px; }
+  .p-panel-header span {
+    border-bottom: 3px solid #91d834;
+    font-size: 20px;
+    font-weight: bold;
+    color: #337ab7;
+    text-align: center;
+    padding: 0 15px 5px 15px; }
+
+table > tbody > tr > td.middle {
+  text-align: center;
+  vertical-align: middle; }
+
+table > tbody > tr > td.vertical-middle {
+  vertical-align: middle; }
+
+
+.admin-appeal-manage .th-no {
+  width: 45px;
+  text-align: center; }
+
+.admin-appeal-manage .th-name {
+  width: 80px;
+  text-align: center; }
+
+.admin-appeal-manage .th-op {
+  width: 50px;
+  text-align: center; }
+
+.admin-basic-test-item-mamage .test-th-no {
+  width: 45px;
+  text-align: center; }
+
+.admin-basic-test-item-mamage .test-th-name {
+  width: 80px; }
+
+.admin-basic-test-item-mamage .test-th-op {
+  width: 50px;
+  text-align: center; }
+
+.admin-export .table th, .admin-export td {
+  text-align: center; }
+
+.admin-export .th-no {
+  width: 45px;
+  text-align: center; }
+
+
+.admin-temp-score .table th, .admin-temp-score td {
+  text-align: center; }
+
+.admin-temp-score .th-no {
+  width: 45px;
+  text-align: center; }
+
+.admin-temp-test-item-mamage .test-th-no {
+  width: 45px;
+  text-align: center; }
+
+.admin-temp-test-item-mamage .test-th-op {
+  width: 50px;
+  text-align: center; }
+
+.admin-user .test-th-no {
+  width: 45px;
+  text-align: center; }
+
+.admin-user .test-th-op {
+  width: 50px;
+  text-align: center; }
+
+.front-appeal .table th, .front-appeal td {
+  text-align: center; }
+
+.front-appeal .th-no {
+  width: 45px;
+  text-align: center; }
+
+.front-score .table th, .front-score td {
+  text-align: center; }
+
+.front-score .th-no {
+  width: 45px;
+  text-align: center; }
+
+.front-score-user .socre-body {
+  height: 280px;
+  overflow: auto; }
+
+.front-user .th-no {
+  width: 45px;
+  text-align: center; }
+
+.front-user .th-op, .front-user .th-score {
+  width: 50px;
+  text-align: center; }
+
+.front-user .score-col {
+  height: 300px;
+  overflow: auto; }
+
+.p-login {
+  margin-top: 80px; }
+
+.container-main {
+  margin-bottom: 50px; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #222;
+  border-color: #080808;
+  width: 100%; }
+  .footer .copyright {
+    color: #fff;
+    padding: 8px;
+    font-size: 12px; }

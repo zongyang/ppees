@@ -1,0 +1,87 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" ui-sref="front-score">监狱民警考核测评系统</a>
+		</div>
+		<ul class="nav navbar-nav" ng-if="admin">
+			<li>
+				<a ui-sref="admin-index">组织结构</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle pointer" data-toggle="dropdown">
+					<span>考核项管理</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a ui-sref="admin-basic-test-item-mamage">基础考核项</a>
+					</li>
+					<li>
+						<a ui-sref="admin-temp-test-item-mamage">临时考核项</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a ui-sref="admin-user">用户管理</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle pointer" data-toggle="dropdown">
+					<span>评分管理</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a ui-sref="admin-temp-score">临时项打分</a>
+					</li>
+					<li>
+						<a ui-sref="admin-appeal-manage">评分申诉管理</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a ui-sref="admin-export">导出报表</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav" ng-if="!admin">
+			<li>
+				<a ui-sref="front-score">评分列表</a>
+			</li>
+			<li>
+				<a ui-sref="front-user">我的评分</a>
+			</li>
+			<li>
+				<a ui-sref="front-appeal">我的申诉</a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a class="dropdown-toggle pointer" data-toggle="dropdown">
+					<span>管理员</span>
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">
+							<i class="fa fa-fw fa-info text-primary"></i>
+							<span> 信息修改</span>
+						</a>
+					</li>
+					<li ng-if="!admin">
+						<a ui-sref="admin-index">
+							<i class="fa fa-fw fa-cog text-primary"></i>
+							<span> 后台管理</span>
+						</a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a ui-sref="login">
+							<i class="fa fa-fw fa-power-off text-danger"></i>
+							<span> 注销</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>

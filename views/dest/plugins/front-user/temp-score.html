@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="p-panel-header"><span>我的临时考核评分</span></div>
+		<div class="panel panel-default">
+			<div class="panel-body text-center">
+				<strong>总分 = 2017第一季度考核*0.1 + 2016第四季度考核*0.1 + 2016年度考核*0.1 + 业务分析*0.2 + 理论考试*0.2 + 两学一做*0.3</strong>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th class="th-no">序号</th>
+						<th>考核项</th>
+						<th class="th-score">分数</th>
+						<th class="th-op">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="data in datas">
+						<td class="middle">{{$index+1}}</td>
+						<td class="vertical-middle">{{data.name}}</td>
+						<td class="middle">{{data.score}}</td>
+						<td class="middle">
+							<a class="pointer">申诉</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="middle">总分</td>
+						<td colspan="3">100</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

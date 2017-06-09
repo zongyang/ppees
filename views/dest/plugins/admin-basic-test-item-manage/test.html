@@ -1,0 +1,40 @@
+<div class="admin-basic-test-item-mamage" p-layout admin="true">
+	<div p-breadcrumb></div>
+	<div class="row">
+		<div class="col-md-6" ng-repeat="data in datas">
+			<div class="p-panel-header">
+				<span>{{data.name}}</span>
+			</div>
+			<div class="panel panel-default">
+				<!--<div class="panel-heading p-panel-title">德</div>-->
+				<div class="panel-table"></div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="test-th-no">序号</th>
+							<th class="test-th-name">名称</th>
+							<th>考核内容</th>
+							<th class="test-th-op">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in data.items">
+							<td class="middle">{{$index+1}}</td>
+							<td class="vertical-middle">{{item.name}}</td>
+							<td class="vertical-middle">{{item.content}}</td>
+							<td class="middle">
+								<i class="fa fa-edit text-primary pointer"></i>
+								<i class="fa fa-trash  text-danger pointer"></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="panel-footer">
+					<button type="button" class="btn btn-default btn-sm"><i class="fa fa-plus text-primary"></i> 添加</button>
+					<button type="button" class="btn btn-default btn-sm"><i class="fa fa-edit text-warning"></i> 修改</button>
+					<button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash text-danger"></i> 删除</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

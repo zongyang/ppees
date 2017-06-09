@@ -1,0 +1,33 @@
+<div class="front-score" p-layout>
+	<div p-breadcrumb></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="p-panel-header"><span>评分列表</span></div>
+			<div class="panel panel-default">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="th-no">序号</th>
+							<th>姓名</th>
+							<th>分数</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="data in datas">
+							<td>{{$index+1}}</td>
+							<td>{{data.username}}</td>
+							<td>
+								<span ng-if="data.score">{{data.score}}</span>
+								<span class="text-warning" ng-if="!data.score">未评分</span>
+							</td>
+							<td>
+								<a ui-sref="front-score-user"><i class="fa fa-edit text-primary"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

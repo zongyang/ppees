@@ -1,0 +1,33 @@
+<div class="admin-appeal-manage" p-layout admin="true">
+	<div p-breadcrumb></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="p-panel-header"><span>申诉管理</span></div>
+			<div class="panel panel-default">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="th-no">序号</th>
+							<th class="th-name">申诉人</th>
+							<th>申诉内容</th>
+							<th class="th-name">答复人</th>
+							<th>答复内容</th>
+							<th class="th-op">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="data in datas">
+							<td class="middle">{{$index+1}}</td>
+							<td class="middle">{{data.appealer}}</td>
+							<td class="vertical-middle">{{data.appealContent}}</td>
+							<td class="middle">{{data.answer}}</td>
+							<td class="vertical-middle">{{data.answerContent}}</td>
+							<td class="middle"><a class="pointer">答复</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+

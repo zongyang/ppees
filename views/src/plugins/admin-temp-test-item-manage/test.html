@@ -1,0 +1,38 @@
+<div class="admin-temp-test-item-mamage" p-layout admin="true">
+	<div p-breadcrumb></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="p-panel-header"><span>临时考核项</span></div>
+			<div class="panel panel-default">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="test-th-no">序号</th>
+							<th class="test-th-name">名称</th>
+							<th>考核内容</th>
+							<th class="text-center">权重系数</th>
+							<th class="test-th-op">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="data in datas">
+							<td class="middle">{{$index+1}}</td>
+							<td class="vertical-middle">{{data.name}}</td>
+							<td class="vertical-middle">{{data.content}}</td>
+							<td class="middle">{{data.factor}}</td>
+							<td class="middle">
+								<i class="fa fa-edit text-primary pointer"></i>
+								<i class="fa fa-trash  text-danger pointer"></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="panel-footer">
+					<button type="button" class="btn btn-default btn-sm"><i class="fa fa-plus text-primary"></i> 添加</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div p-admin-temp-test-item-mamage-score></div>
+</div>

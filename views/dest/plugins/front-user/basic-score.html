@@ -1,0 +1,43 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="p-panel-header"><span>我的基础考核评分</span></div>
+		<div class="panel panel-default">
+			<div class="panel-body text-center">
+				<strong>总分 = (德+能+勤+绩+廉)/5</strong>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4 score-col" ng-repeat="data in datas">
+		<div class="p-panel-header">
+			<span>{{data.name}}</span>
+		</div>
+		<div class="panel panel-default">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th class="th-no">序号</th>
+						<th>考核项</th>
+						<th class="th-score">分数</th>
+						<th class="th-op">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in data.items">
+						<td class="middle">{{$index+1}}</td>
+						<td class="vertical-middle">{{item.name}}</td>
+						<td class="middle">{{item.score}}</td>
+						<td class="middle">
+							<a class="pointer">申诉</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="middle">总分</td>
+						<td colspan="3">100</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,39 @@
+<div class="admin-export" p-layout admin="true">
+	<div p-breadcrumb></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="p-panel-header"><span>导出报表</span></div>
+			<div class="btn-group margin-bottom-10">
+				<button class="btn btn-primary btn-sm">总排名</button>
+				<button class="btn btn-default btn-sm">部门间排名</button>
+				<button class="btn btn-default btn-sm">考核项目排名</button>
+				<button class="btn btn-default btn-sm">部门内部排名</button>
+			</div>
+			<div class="panel panel-default">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="th-no">序号</th>
+							<th>姓名</th>
+							<th>基本项目</th>
+							<th>临时项目</th>
+							<th>总分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="data in datas">
+							<td class="middle">{{$index+1}}</td>
+							<td class="middle">{{data.userName}}</td>
+							<td class="middle">{{data.baseScore}}</td>
+							<td class="middle">{{data.tempScore}}</td>
+							<td class="middle">{{data.total}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="panel-footer">
+					<button type="button" class="btn btn-primary"><i class="fa fa-file-excel-o"></i> 导出</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
