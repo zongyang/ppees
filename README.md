@@ -1,6 +1,4 @@
 #### [demo](http://120.77.16.144:3000/#!/admin-index)
-### ==Attention==
-> 因为是练手的，没啥实际用途，水平不高，没有cdn，没压缩，没lazyloading等，bug多，加载慢，很脆弱，请善待demo，拜托拜托！
 
 ####  监狱民警考核测评系统
 1. 后台：nodejs、express 
